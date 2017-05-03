@@ -3,7 +3,7 @@ Theme Name: White Elegance
 Author: Studio Element
 Author URI: http://studio-element.com/
 Template: adrenalin
-Version: 0.4
+Version: 0.3
 Description: Custom theme for White Elegance.
 GitHub Theme URI: burbankb/whiteelegance
 */
@@ -13,4 +13,51 @@ GitHub Theme URI: burbankb/whiteelegance
     max-width: 1170px;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+.cg-main-menu {
+    position: absolute;
+    top: -60px;
+    right: 130px;
+    width: initial !important;
+}
+
+.cg-primary-menu .menu > li .cg-submenu-ddown .container > ul .menu-item-has-children .cg-submenu {
+    left: auto !important;
+    right: 219px !important;
+}
+
+ul.tiny-cart {
+    position: absolute !important;
+    right: 15px;
+    top: -60px;
+}
+
+
+.cg-header-fixed .menu > li.menu-item-has-children > a:after, .cg-primary-menu .menu > li.menu-item-has-children > a:after {
+    content: "/" !important;
+    font-size: inherit !important;
+    margin-left: 12px !important;
+    opacity: 1 !important;
+    position: relative !important;
+    top: 0 !important;
+    font-weight: 400 !important;
+}
+
+.cg-header-fixed .menu > li.menu-item-has-children:last-child > a:after, .cg-primary-menu .menu > li.menu-item-has-children:last-child > a:after {
+    content: none !important;
+}
+
+.cg-header-fixed .menu > li, .cg-primary-menu .menu > li {
+    padding: 0 4px !important;
+}
+
+
+@media (min-width: 768px) {
+    .cg-logo-inner-cart-wrap {
+        border-bottom: 1px solid #eee !important;
+    }
+    .cg-menu-below {
+        border: none !important;
+    }
 }
