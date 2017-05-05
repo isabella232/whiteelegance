@@ -3,7 +3,7 @@ Theme Name: White Elegance
 Author: Studio Element
 Author URI: http://studio-element.com/
 Template: adrenalin
-Version: 0.4.2
+Version: 0.4.3
 Description: Custom theme for White Elegance.
 GitHub Theme URI: burbankb/whiteelegance
 */
@@ -56,6 +56,55 @@ ul.tiny-cart {
     padding: 0 4px !important;
 }
 
+.element-hr-heading {
+    position: relative;
+    margin-bottom: 0 !important;
+}
+
+.element-hr-heading:before, .element-hr-heading:after  {
+    content: "";
+    display: inline-block;
+    width: 36%;
+    border-bottom: 1px #E5E5E5 solid;
+    margin: 6px 0;
+}
+
+.element-hr-heading:before  {
+    margin-right: 11px;
+}
+
+.element-hr-heading:after  {
+    margin-left: 11px;
+}
+
+.el-product-wrapper {
+    padding:0 100px;
+}
+
+.el-product-wrapper:before, .el-product-wrapper:after {
+    content: "";
+    background-image: url(img/product-slider-ribbon.png);
+    width: 100px !important;
+    height: 340px !important;
+    display: block !important;
+    background-size: contain;
+    position: absolute;
+    top:65px;
+}
+
+.el-product-wrapper:before{
+    left:0;
+}
+
+.el-product-wrapper:after {
+    right:0;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+
+/* style overrides for resposive header */
 
 @media (min-width: 768px) {
     .cg-logo-inner-cart-wrap {
@@ -65,3 +114,47 @@ ul.tiny-cart {
         border: none !important;
     }
 }
+
+/* Footer widget styles*/
+footer {
+    font-size: 14px;
+}
+.el-footer-address {
+    font-weight:100;
+}
+
+.el-footer-social {
+    font-weight:100;
+}
+
+.el-widget-quicklinks {
+    text-transform: uppercase;
+}
+
+.el-widget-quicklinks li{
+    list-style: none;
+    border: none !important;
+    line-height: 162% !important;
+}
+
+.el-widget-quicklinks li a{
+    font-weight:100 !important;
+    font-size: 14px !important;
+    padding-top: 0 !important;
+}
+
+.el-footer-about {
+    font-weight:100 !important;
+    font-size: 14px !important;
+    padding-top: 0 !important;
+}
+
+footer .widget-title {
+    font-weight: bold !important;
+    font-size: 14px !important;
+    margin-bottom: 0 !important;
+}
+
+
+
+
