@@ -170,6 +170,144 @@ footer .widget-title {
     margin-bottom: 0 !important;
 }
 
+/* Breadcumbs and things */
+.breadcrumb-wrapper {
+    background: transparent !important;
+    padding: 0 !important;
+}
 
+.breadcrumb-wrapper p#breadcrumbs, .breadcrumb-wrapper p#breadcrumbs a{
+    color: #B0B0B0 !important;
+}
 
+#cg-page-wrap .product-title-wrapper {
+    background-color: white !important;
+}
+
+#cg-page-wrap .product-title-wrapper .container:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    border-bottom: 1px #eee solid; 
+}
+
+.next-product:before, .prev-product:before {
+    color: black !important;
+    border: none !important;
+}
+
+#cg-page-wrap .product-title-wrapper .product-page-title h1.page-title, #cg-page-wrap .product-title-wrapper .cg-back-to-prev a{
+    color: #B0B0B0 !important;
+    font-weight: 100 !important;
+    text-transform: none !important;
+}
+
+/* Product Pages */
+.cg-product-detail .single-product-details .product_title {
+    font-weight: 100 !important;
+    color: #B0B0B0 !important;
+    text-transform: none !important;
+    font-size: 310% !important;
+}
+
+.woocommerce .container button.button.single_add_to_cart_button {
+    text-transform: none !important;
+    font-size: 95% !important;
+    font-weight: bold !important;
+    background-color: #4E5CA3 !important;
+}
+
+.variations_form { 
+    border-top: none !important;
+}
+
+.variations_form table.variations {
+    margin-bottom: 0 !important;
+}
+
+.variations_form .variations td.label label {
+    color: #7e7e7e !important;
+    margin-bottom: 0 !important;
+}
+
+.variations_form .variations td.value {
+    display: block;
+}
+
+.quantity.buttons_added{
+    display: block !important;
+    margin-bottom: 5px;
+}
+.quantity.buttons_added:before {
+    content: "QTY";
+    color: #7e7e7e;
+    display: block;
+    float: left;
+    font-size: 110%;
+    padding: 13px 20px 9px 0;
+}
+
+.quantity .qty {
+    color: black !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+.quantity .qty:focus {
+    border: 1px #aaa solid !important;
+}
+.quantity .minus, .quantity .plus {
+    border: none !important;
+    color: #4E5CA3 !important;
+    width: 25px !important;
+}
+
+section.slider .star-rating span, .woocommerce .container .star-rating span, .woocommerce-page .container .star-rating span {
+    color: #4E5CA3 !important;
+    background-image: url(img/star-on-retina.png);
+}
+
+a.woocommerce-review-link {
+    color: #4E5CA3 !important;
+}
+
+.woocommerce-tabs ul.tabs {
+    border-top: none;
+}
+
+@media (min-width: 768px) {
+    .woocommerce-tabs ul.tabs {height: 35px;}
+}
+
+.woocommerce-tabs ul.tabs li a {
+    text-transform: none !important;
+    color: #4E5CA3 !important;
+    padding: 1px 0 !important;
+    margin-right: 60px !important;
+    line-height: 30px !important;
+    font-size: 95% !important;
+}
+
+.woocommerce .cg-product-detail .woocommerce-tabs ul.tabs li.active a {
+    background: white !important;
+    color: black !important;
+}
+
+.tipr_point_top:after, .woocommerce .woocommerce-tabs ul.tabs li.active a:after {
+    border-top-color: #b0b0b0 !important;
+    bottom: -11px !important;
+}
+
+.related.products {
+    border: none !important;
+}
+
+.related h2 {
+    color: #B0B0B0 !important;
+    border-bottom: 1px solid #eee;
+}
+
+.cg-product-img {
+    border: none !important;
+}
 
