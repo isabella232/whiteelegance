@@ -5,4 +5,24 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,900,900i' );
 }
 
+add_action( 'init', 'cg_woocommerce_image_dimensions_el_override', 1 );
+
+function cg_woocommerce_image_dimensions_el_override() {
+    $single = array(
+        'width' => '500', // px
+        'height' => '920', // px
+        'crop' => 1        // true
+    );
+    $catalog = array(
+        'width' => '220', // px
+        'height' => '405', // px
+        'crop' => 1        // true
+    );
+    // Image sizes
+    update_option( 'shop_single_image_size', $single ); // Single product image
+    update_option( 'shop_catalog_image_size', $catalog );       // Product category 
+
+}
+
+
 ?>

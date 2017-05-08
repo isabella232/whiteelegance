@@ -3,7 +3,7 @@ Theme Name: White Elegance
 Author: Studio Element
 Author URI: http://studio-element.com/
 Template: adrenalin
-Version: 0.4.6
+Version: 0.4.8
 Description: Custom theme for White Elegance.
 GitHub Theme URI: burbankb/whiteelegance
 */
@@ -180,11 +180,12 @@ footer .widget-title {
     color: #B0B0B0 !important;
 }
 
-#cg-page-wrap .product-title-wrapper {
+#cg-page-wrap .product-title-wrapper, #cg-page-wrap .header-wrapper {
     background-color: white !important;
+    padding-top: 0 !important;
 }
 
-#cg-page-wrap .product-title-wrapper .container:before {
+#cg-page-wrap .product-title-wrapper .container:before, #cg-page-wrap .header-wrapper .container:before {
     content: '';
     display: block;
     width: 100%;
@@ -197,7 +198,7 @@ footer .widget-title {
     border: none !important;
 }
 
-#cg-page-wrap .product-title-wrapper .product-page-title h1.page-title, #cg-page-wrap .product-title-wrapper .cg-back-to-prev a{
+#cg-page-wrap .product-title-wrapper .product-page-title h1.page-title, #cg-page-wrap .product-title-wrapper .cg-back-to-prev a, #cg-page-wrap .header-wrapper .entry-header h1.cg-page-title{
     color: #B0B0B0 !important;
     font-weight: 100 !important;
     text-transform: none !important;
@@ -208,7 +209,11 @@ footer .widget-title {
     font-weight: 100 !important;
     color: #B0B0B0 !important;
     text-transform: none !important;
-    font-size: 310% !important;
+    
+}
+
+@media (min-width: 768px) {
+    .cg-product-detail .single-product-details .product_title {font-size: 310% !important;}
 }
 
 .woocommerce .container button.button.single_add_to_cart_button {
