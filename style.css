@@ -8,6 +8,9 @@ Description: Custom theme for White Elegance.
 GitHub Theme URI: burbankb/whiteelegance
 */
 
+p.demo_store {
+    z-index: 9999;
+}
 
 .vc_row.wpb_row { 
     max-width: 1170px;
@@ -217,7 +220,7 @@ footer .widget-title {
 }
 
 .woocommerce .container button.button.single_add_to_cart_button {
-    text-transform: none !important;
+    text-transform: capitalize !important;
     font-size: 95% !important;
     font-weight: bold !important;
     background-color: #4E5CA3 !important;
@@ -261,10 +264,17 @@ footer .widget-title {
 .quantity .qty:focus {
     border: 1px #aaa solid !important;
 }
-.quantity .minus, .quantity .plus {
-    border: none !important;
-    color: #4E5CA3 !important;
-    width: 25px !important;
+.woocommerce .cart .quantity .minus, .woocommerce .cart .quantity .plus {
+    display: inline-block !important;
+    border-color: #4E5CA3;
+    color: #4E5CA3;
+    width: 15px;
+    height: 15px;
+    border-radius: 99px;
+    line-height: 0;
+    font-size: 90% !important;
+    padding-bottom: 1px;
+    padding-left: .5px;
 }
 
 section.slider .star-rating span, .woocommerce .container .star-rating span, .woocommerce-page .container .star-rating span {
@@ -315,4 +325,10 @@ a.woocommerce-review-link {
 .cg-product-img {
     border: none !important;
 }
-
+.price {
+    margin: 13px 0 !important;
+}
+.price .amount {
+    font-weight: 100;
+    font-size: 120%
+}
