@@ -3,7 +3,7 @@ Theme Name: White Elegance
 Author: Studio Element
 Author URI: http://studio-element.com/
 Template: adrenalin
-Version: 0.4.9
+Version: 0.4.10
 Description: Custom theme for White Elegance.
 GitHub Theme URI: burbankb/whiteelegance
 */
@@ -212,14 +212,19 @@ footer .widget-title {
     font-weight: 100 !important;
     color: #B0B0B0 !important;
     text-transform: none !important;
-    
+}
+
+.summary h1.product_title a {
+    font-weight: 100 !important;
+    color: #A0A0A0 !important;
+    text-transform: none !important;
 }
 
 @media (min-width: 768px) {
     .cg-product-detail .single-product-details .product_title {font-size: 310% !important;}
 }
 
-.woocommerce .container button.button.single_add_to_cart_button {
+.woocommerce .container button.button.single_add_to_cart_button, .cg-quickview-product-pop .single-product-details button.button.single_add_to_cart_button {
     text-transform: capitalize !important;
     font-size: 95% !important;
     font-weight: bold !important;
@@ -255,6 +260,9 @@ footer .widget-title {
     font-size: 110%;
     padding: 13px 20px 9px 0;
 }
+.cart_item .quantity.buttons_added:before {
+    content: none;
+}
 
 .quantity .qty {
     color: black !important;
@@ -268,16 +276,16 @@ footer .widget-title {
     display: inline-block !important;
     border-color: #4E5CA3;
     color: #4E5CA3;
-    width: 15px;
-    height: 15px;
+    width: 15px !important;
+    height: 15px !important;
     border-radius: 99px;
-    line-height: 0;
+    line-height: 0 !important;
     font-size: 90% !important;
     padding-bottom: 1px;
     padding-left: .5px;
 }
 
-section.slider .star-rating span, .woocommerce .container .star-rating span, .woocommerce-page .container .star-rating span {
+section.slider .star-rating span, .woocommerce .container .star-rating span, .woocommerce-page .container .star-rating span, .home .star-rating span {
     color: #4E5CA3 !important;
     background-image: url(img/star-on-retina.png);
 }
@@ -290,7 +298,7 @@ a.woocommerce-review-link {
     border-top: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .woocommerce-tabs ul.tabs {height: 35px;}
 }
 
@@ -332,3 +340,37 @@ a.woocommerce-review-link {
     font-weight: 100;
     font-size: 120%
 }
+
+ul.page-numbers li span.current{
+    background-color: #4E5CA3 !important;
+}
+
+ul.page-numbers li a.page-numbers:hover, .woocommerce-cart .woocommerce input.button.checkout-button {
+    background-color: #4E5CA3 !important;
+    border-color: #4E5CA3 !important;
+}
+
+.cg-wc-messages .woocommerce-message {
+    padding: 17px 120px 14px 23px;
+}
+
+body.woocommerce-cart .woocommerce-message a {
+    top: initial !important;
+}
+
+body.woocommerce-cart .woocommerce-message a.button {
+    top: 0 !important;
+}
+
+.cg-quick-view-wrap a.cg-quick-view {
+    background-color: rgba(250, 250, 250, .9) !important;
+    color: #000 !important;
+}
+
+.onsale-wrap {
+    border-color: rgba(78, 92, 163, .7) !important; 
+}
+.onsale-wrap .onsale-inner {
+    background-color: rgba(78, 92, 163, .95) !important;
+}
+
