@@ -3,7 +3,7 @@ Theme Name: White Elegance
 Author: Studio Element
 Author URI: http://studio-element.com/
 Template: adrenalin
-Version: 0.4.19
+Version: 0.4.20
 Description: Custom theme for White Elegance.
 GitHub Theme URI: burbankb/whiteelegance
 */
@@ -91,6 +91,7 @@ ul.tiny-cart {
 
 .el-product-wrapper {
     padding:0 100px;
+    margin-bottom: 0 !important;
 }
 
 .el-product-wrapper:before, .el-product-wrapper:after {
