@@ -3,7 +3,7 @@ Theme Name: White Elegance
 Author: Studio Element
 Author URI: http://studio-element.com/
 Template: adrenalin
-Version: 0.4.23
+Version: 0.4.24
 Description: Custom theme for White Elegance.
 GitHub Theme URI: burbankb/whiteelegance
 */
@@ -27,10 +27,19 @@ p.demo_store {
     margin-right: auto !important;
 }
 
-.cg-main-menu {
+.el-menu-wrapper {
     position: absolute;
-    top: -55px;
-    right: 130px;
+    top: -52px;
+    right: 60px;
+}
+
+.el-search-button {
+    float: left;
+    padding: 10px 8px;
+}
+
+.cg-main-menu {
+    float: left !important;
     width: initial !important;
 }
 
@@ -43,10 +52,21 @@ p.demo_store {
     right: 219px !important;
 }
 
-ul.tiny-cart {
-    position: absolute !important;
-    right: 15px;
-    top: -60px;
+@media (min-width: 768px) {
+    ul.tiny-cart {
+        position: absolute !important;
+        right: 15px;
+        top: -60px;
+    }
+    .el-menu-wrapper {
+        position: absolute;
+        top: -55px;
+        right: 130px;
+    }
+}
+
+.el-search-button {
+    float: left;
 }
 
 
@@ -445,3 +465,48 @@ a.ls-nav-next:after {
     margin: 0 !important;
 }
 
+.el-hidden-search {
+    padding: 11px 20%;
+    margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .el-hidden-search {
+        padding: 11px 0;
+    }
+}
+
+.el-search-field {
+    display: block;
+    position: relative;
+    border: 1px solid #b0b0b0; 
+    padding-left: 20px;
+    padding-right: 25px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.el-search-field:before {
+    content: "";
+    font-family: "fontawesome";
+    display: block;
+    position: absolute;
+    color: #bfbfbf;
+    top: 50%;
+    left: 7px;
+    margin-top: -12px;
+}
+
+.el-search-field:after {
+    content: "\f0a9";
+    font-family: "fontawesome";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -12px;
+}
+
+.search-field {
+    border:none !important;
+}

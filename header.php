@@ -299,6 +299,9 @@ if ( isset( $cg_options['cg_logo_position'] ) ) {
                 <div class="container">
                     <div class="row">
                         <div class="container">
+                            <div class="el-menu-wrapper">
+                            <div class="el-search-button"><a href="#search"><i class="fa fa-search" aria-hidden="true"></i></a>
+</div>
                             <?php if ( has_nav_menu( 'primary' ) ) { ?>
                                 <?php
                                 wp_nav_menu( array(
@@ -317,6 +320,7 @@ if ( isset( $cg_options['cg_logo_position'] ) ) {
                             <?php } else { ?>
                                 <p class="setup-message">You can set your main menu in <strong>Appearance &gt; Menus</strong></p>
                             <?php } ?>
+                            </div>
                             <?php if ( $cg_display_cart !== 'no' ) { ?>
                                 <?php if ( $cg_catalog == 'disabled' ) { ?>
                                     <div class="cart-wrap">
@@ -416,7 +420,7 @@ if ( isset( $cg_options['cg_logo_position'] ) ) {
                     wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'ul', 'menu_id' => 'mobile-cg-primary-menu', 'menu_class' => 'mobile-menu-wrap', 'walker' => new mobile_cg_menu() ) );
                 }
                 ?>
-            </div><!--/mobile-menu WALLAWALLA-->
+            </div><!--/mobile-menu -->
             <?php } ?>
 
             <div id="cg-page-wrap" class="hfeed site">
@@ -454,3 +458,5 @@ if ( isset( $cg_options['cg_logo_position'] ) ) {
         </div>' );
                 }
                 ?>
+                <div class="container"><div class="el-hidden-search"><div id="woocommerce_product_search-5" class="woocommerce widget_product_search"><form class="woocommerce-product-search" action="http://localhost:8888/whiteelegance/" method="get">
+<div class="el-search-field"><input id="woocommerce-product-search-field" class="search-field" title="Search for:" name="s" type="search" value="" placeholder="Search Products…" /></div><input type="submit" value="Search" /><input name="post_type" type="hidden" value="product" /></form></div></div></div>
