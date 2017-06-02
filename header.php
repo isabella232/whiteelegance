@@ -470,5 +470,4 @@ if ( isset( $cg_options['cg_logo_position'] ) ) {
                             </form>
                         </div>
                     </div>
-                    <script>document.getElementById("el_product_search").style.display = "none"; console.log("done");</script>
                 </div>
