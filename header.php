@@ -458,5 +458,17 @@ if ( isset( $cg_options['cg_logo_position'] ) ) {
         </div>' );
                 }
                 ?>
-                <div class="container"><div class="el-hidden-search"><div id="woocommerce_product_search-5" class="woocommerce widget_product_search"><form class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
-<div class="el-search-field"><input id="woocommerce-product-search-field" class="search-field" title="Search for:" name="s" type="search" value="" placeholder="Search Products…" /></div><input type="submit" value="Search" /><input name="post_type" type="hidden" value="product" /></form></div></div></div>
+                <div class="container">
+                    <div id="el_product_search" class="el-hidden-search">
+                        <div id="woocommerce_product_search-5" class="woocommerce widget_product_search">
+                            <form class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
+                                <div class="el-search-field">
+                                    <input id="woocommerce-product-search-field" class="search-field" title="Search for:" name="s" type="search" value="" placeholder="Search Products…" />
+                                </div>
+                                <input type="submit" value="Search" />
+                                <input name="post_type" type="hidden" value="product" />
+                            </form>
+                        </div>
+                    </div>
+                    <script>document.getElementById("el_product_search").style.display = "none"; console.log("done");</script>
+                </div>

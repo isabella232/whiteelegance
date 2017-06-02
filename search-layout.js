@@ -7,6 +7,4 @@
             searchBox.slideToggle();
         });     
     });
-
-
 })(jQuery);
