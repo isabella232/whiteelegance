@@ -3,7 +3,7 @@ Theme Name: White Elegance
 Author: Studio Element
 Author URI: http://studio-element.com/
 Template: adrenalin
-Version: 1.0.0
+Version: 1.0.5
 Description: Custom theme for White Elegance.
 GitHub Theme URI: burbankb/whiteelegance
 */
@@ -74,6 +74,7 @@ p.demo_store {
     position: relative !important;
     top: 0 !important;
     font-weight: 400 !important;
+    color: #333 !important;
 }
 
 .cg-header-fixed .menu > li.menu-item:last-child > a:after, .cg-primary-menu .menu > li.menu-item:last-child > a:after {
@@ -511,4 +512,12 @@ a.ls-nav-next:after {
 
 .search-field {
     border:none !important;
+}
+
+.cg-wp-menu-wrapper .menu li:hover > a, body .cg-wp-menu-wrapper.cg-primary-menu .menu > li .cg-submenu-ddown .container > ul > li a:hover {
+    color: rgba(78, 92, 163, .95) !important;
+}
+
+.cg-wp-menu-wrapper .menu li > a:focus, .cg-wp-menu-wrapper .menu > li > a:active {
+    text-decoration: none;
 }
