@@ -18,11 +18,11 @@ function cg_woocommerce_image_dimensions_el_override() {
     $catalog = array(
         'width' => '220', // px
         'height' => '405', // px
-        'crop' => 1        // true
+        'crop' => 0        // true
     );
     // Image sizes
-    update_option( 'shop_single_image_size', $single ); // Single product image
-    update_option( 'shop_catalog_image_size', $catalog );       // Product category 
+    update_option( 'shop_single_image_size', $single );   // Single product image
+    update_option( 'shop_catalog_image_size', $catalog ); // Product category
 
 }
 
