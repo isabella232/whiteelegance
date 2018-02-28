@@ -109,7 +109,7 @@ if ( isset( $cg_options['cg_logo_position'] ) ) {
 
         <?php wp_head(); ?>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet" id="locked">
-        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/fontfix.js"></script>
+        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/fontfix.js"></script>
     </head>
     <body id="skrollr-body" <?php body_class(); ?>>
         <div id="wrapper">
