@@ -24,8 +24,10 @@ function listAnnouncements(container, announceElement) {
         var searchBox = $('.el-hidden-search');
         searchBox.hide();
 
-        $('a[href="#search"]').click(function(){
+        $('a[href="#search"]').click(function(e){
             searchBox.slideToggle();
+            e.preventDefault();
+            return false;
         });
 
         //strip theme default announcement banner
