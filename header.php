@@ -464,6 +464,7 @@ if ( isset( $cg_options['cg_logo_position'] ) ) {
                 <div class="container">
                     <div id="el_product_search" class="el-hidden-search">
                         <div id="woocommerce_product_search-5" class="woocommerce widget_product_search">
+                            <div id="close_search" class="close-search-button"><i class="fa fa-times" aria-hidden="true"></i> Close Search</div>
                             <form class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
                                 <div class="el-search-field">
                                     <input id="woocommerce-product-search-field" class="search-field" title="Search for:" name="s" type="search" value="" placeholder="Search Products…" />

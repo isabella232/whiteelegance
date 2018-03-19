@@ -3,7 +3,7 @@ Theme Name: White Elegance
 Author: Studio Element
 Author URI: http://thestokegroup.com/
 Template: adrenalin
-Version: 1.1.14
+Version: 1.1.15
 Description: Custom theme for White Elegance.
 GitHub Theme URI: Stoke-Dev/whiteelegance
 */
@@ -36,7 +36,51 @@ p.demo_store {
 .el-search-button {
     float: left;
     padding: 10px 8px;
+    opacity: 1;
+    cursor: pointer;
 }
+
+.close-search-button {
+    font-size: 70%;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (min-width: 1198px) {
+
+    .el-search-button {
+        float: left;
+        padding: 0 10px 0 6px;
+        margin-right: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+        transition: all .8s;
+
+    }
+    .el-search-button .fa.fa-search {
+        color: #bfbfbf;
+    }
+
+    .el-search-button.active {
+        margin-top: 60px;
+        padding: 0 50px;
+        opacity: 0;
+    }
+
+    .el-search-button:after {
+        content: "Search";
+        display: inline-block;
+        margin-left: 3px;
+        font-weight: normal;
+        color: #888;
+        font-size: 80%;
+    }
+
+}
+
+
 
 .cg-main-menu {
     float: left !important;

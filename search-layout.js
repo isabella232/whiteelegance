@@ -22,13 +22,29 @@ function listAnnouncements(container, announceElement) {
 (function($){
     $(document).ready(function(){
         var searchBox = $('.el-hidden-search');
+        var searchButton = $('a[href="#search"]').parent();
         searchBox.hide();
 
-        $('a[href="#search"]').click(function(e){
-            searchBox.slideToggle();
+        searchButton.click(function(e){
+            
+            if (!$(this).hasClass("active")) {
+                $(this).addClass("active");
+                searchBox.slideDown();
+                searchBox.addClass("active");
+                searchBox.find("input").first().focus();           
+            } else {
+                $(this).removeClass("active");
+                searchBox.slideUp();
+            }
+
             e.preventDefault();
             return false;
         });
+
+        $("#close_search").click(()=>{
+            searchButton.click();
+        });
+
 
         //strip theme default announcement banner
         var announceElement = $('.cg-show-announcements').wrap('<p/>').parent().html();
